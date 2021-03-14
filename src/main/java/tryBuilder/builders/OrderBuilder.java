@@ -6,6 +6,10 @@ import tryBuilder.componentsOfOrders.Payment;
 import tryBuilder.componentsOfOrders.Shipping;
 import tryBuilder.ordersAndOrderHistory.Order;
 
+//Builder can construct unrelated products, which don't have the common interface. In this case I build an order
+//Builder implements steps defined in the common interface
+
+
 public class OrderBuilder implements BuilderInterfaceYouNeedThoseMethodsForOrder {
     private OrderType type;     //GUEST,LOYAL,ON_HOLD
     private int products;       //5, 10, 20

@@ -6,6 +6,8 @@ import tryBuilder.componentsOfOrders.Payment;
 import tryBuilder.componentsOfOrders.Shipping;
 import tryBuilder.builders.BuilderInterfaceYouNeedThoseMethodsForOrder;
 
+// Director defines the order of building steps. It works with a builder object through common Builder interface.
+
 public class Director {
     public void constractOrderMen(BuilderInterfaceYouNeedThoseMethodsForOrder orderBuilder) {
         orderBuilder.setOrderType(OrderType.GUEST);

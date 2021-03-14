@@ -5,6 +5,8 @@ import tryBuilder.componentsOfOrders.OrderType;
 import tryBuilder.componentsOfOrders.Payment;
 import tryBuilder.componentsOfOrders.Shipping;
 
+// It's another product class
+
 public class OrderHistory {
     private final OrderType type;
     private final int products;

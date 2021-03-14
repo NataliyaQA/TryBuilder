@@ -6,6 +6,8 @@ import tryBuilder.componentsOfOrders.Payment;
 import tryBuilder.componentsOfOrders.Shipping;
 import tryBuilder.ordersAndOrderHistory.OrderHistory;
 
+//In this case I build an order history
+
 public class OrderHistoryBuilder implements BuilderInterfaceYouNeedThoseMethodsForOrder {
     private OrderType type;    //guest, loyal, on hold
     private int products;  //5, 10, 20

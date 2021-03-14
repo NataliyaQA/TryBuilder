@@ -5,6 +5,8 @@ import tryBuilder.componentsOfOrders.OrderType;
 import tryBuilder.componentsOfOrders.Payment;
 import tryBuilder.componentsOfOrders.Shipping;
 
+// this is product class
+
 public class Order {
     private final OrderType type;
     private final int products;
