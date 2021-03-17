@@ -42,7 +42,7 @@ public class OrderBuilder implements BuilderInterfaceYouNeedThoseMethodsForOrder
         this.payment = payment;
     }
 
-    public Order getResult(){
+    public Order getResult() {
         return new Order(type, products, customer, shipping, payment);
     }
 }

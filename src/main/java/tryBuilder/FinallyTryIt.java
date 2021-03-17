@@ -6,13 +6,12 @@ import tryBuilder.director.Director;
 import tryBuilder.ordersAndOrderHistory.Order;
 import tryBuilder.ordersAndOrderHistory.OrderHistory;
 
-public class finallyTryIt {
+public class FinallyTryIt {
     public static void main(String[] args) {
         Director director = new Director();
 
-        // Director gets the concrete builder object from the client
-        // (application code). That's because application knows better which
-        // builder to use to get a specific product.
+        // Director gets the concrete builder object from the client (application code).
+        // That's because application knows better which builder to use to get a specific product.
         OrderBuilder builder = new OrderBuilder();
         director.constractOrderChild(builder);
 
@@ -26,7 +25,7 @@ public class finallyTryIt {
 
         OrderHistoryBuilder orderHistoryBuilder = new OrderHistoryBuilder();
 
-        // Director may know several building recipes.
+        // Director may know several building recipes
         director.constractOrderWomen(orderHistoryBuilder);
         OrderHistory orderHistory = orderHistoryBuilder.getResult();
         System.out.println("\nOrder history built:\n" + orderHistory.print());
